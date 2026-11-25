@@ -1,0 +1,115 @@
+question,expected_id,predicted_id,confidence,in_top3,result,set
+What's the most electricity Tokyo has ever used in one hour?,record_peak,average_demand,0.41,False,wrong answer,dev
+when did the grid hit its all time high,record_peak,record_peak,0.718,True,correct,dev
+max demand ever seen?,record_peak,record_peak,0.652,True,correct,dev
+When was electricity consumption at its lowest point?,lowest_demand,lowest_demand,0.845,True,correct,dev
+what is the minimum demand in the dataset,lowest_demand,lowest_demand,0.461,True,correct,dev
+How much power does the Tokyo area normally need?,average_demand,average_demand,0.468,True,correct,dev
+typical electricity demand in tokyo,average_demand,record_peak,0.524,True,wrong answer,dev
+How many MW are in one GW?,what_is_gw,what_is_gw,0.597,True,correct,dev
+what does gigawatt mean,what_is_gw,what_is_gw,0.879,True,correct,dev
+where did you get this data from,data_source,data_source,0.49,True,correct,dev
+Which organisations provide the data?,data_source,data_source,0.371,True,correct,dev
+Tell me about Tokyo Electric Power Company,what_is_tepco,what_is_tepco,0.895,True,correct,dev
+which prefectures does tepco serve,what_is_tepco,what_is_tepco,0.743,True,correct,dev
+What is the Japan weather agency?,what_is_jma,what_is_jma,0.367,True,correct,dev
+which weather stations did you use,what_is_jma,what_is_jma,0.678,True,correct,dev
+Why does electricity use rise in hot and cold weather?,temperature_effect,temperature_effect,0.535,True,correct,dev
+how is temperature related to power demand,temperature_effect,peak_temp_band,0.482,True,wrong answer,dev
+How many gigawatts does each extra degree add?,heat_vs_cold,heat_vs_cold,0.611,True,correct,dev
+does cooling cost more than heating,heat_vs_cold,heat_vs_cold,0.382,True,correct,dev
+What temperature has the least electricity use?,lowest_temp_band,lowest_temp_band,0.652,True,correct,dev
+at which temperature is demand lowest,lowest_temp_band,lowest_temp_band,0.875,True,correct,dev
+How much power is needed at 35 °C?,peak_temp_band,peak_temp_band,0.354,True,correct,dev
+which temperature range has the highest demand,peak_temp_band,peak_temp_band,0.804,True,correct,dev
+Do muggy days increase electricity use?,humidity,humidity,0.491,True,correct,dev
+what is the impact of humidity,humidity,humidity,0.492,True,correct,dev
+At what hour is demand highest in summer?,peak_hours,peak_hours,0.572,True,correct,dev
+when during the day is electricity use at its peak,peak_hours,peak_hours,0.724,True,correct,dev
+Is winter or summer demand bigger?,season_compare,season_compare,0.486,True,correct,dev
+which season has the highest electricity use,season_compare,season_compare,0.475,True,correct,dev
+Which month has the lowest electricity use?,month_compare,month_compare,0.53,True,correct,dev
+what month uses the most power,month_compare,month_compare,0.48,True,correct,dev
+How much lower is demand on Saturdays and Sundays?,workday_weekend,workday_weekend,0.682,True,correct,dev
+weekend vs workday electricity,workday_weekend,workday_weekend,0.662,True,correct,dev
+Which day of the week is the busiest for electricity?,weekday_rank,weekday_rank,0.58,True,correct,dev
+is sunday the lowest day,weekday_rank,weekday_rank,0.912,True,correct,dev
+What happens to demand during Golden Week holidays?,holidays,holidays,0.703,True,correct,dev
+does obon reduce electricity usage,holidays,holidays,0.55,True,correct,dev
+What does Obon mean?,what_is_golden_week,what_is_golden_week,0.607,True,correct,dev
+explain bridge days,what_is_golden_week,what_is_golden_week,0.427,True,correct,dev
+What share of demand is covered by solar panels?,solar,solar,0.69,True,correct,dev
+how much solar power is there,solar,solar,0.548,True,correct,dev
+Why does the evening become the hardest time for power plants?,net_demand,net_demand,0.742,True,correct,dev
+what is the duck curve,net_demand,net_demand,0.735,True,correct,dev
+When was the grid closest to running out of power?,tight_supply,tight_supply,0.329,True,correct,dev
+highest usage rate ever,tight_supply,tight_supply,0.853,True,correct,dev
+How is the usage rate calculated?,usage_rate,usage_rate,0.835,True,correct,dev
+which station is hottest,hottest_station,hottest_station,0.583,True,correct,dev
+Where in Kanto does it get above 40 degrees?,hottest_station,hottest_station,0.407,True,correct,dev
+Are there more very hot hours now than before?,hotter_summers,hotter_summers,0.514,True,correct,dev
+is electricity demand growing every year,hotter_summers,hotter_summers,0.49,True,correct,dev
+How good is TEPCO at forecasting demand?,tepco_forecast,tepco_forecast,0.664,True,correct,dev
+How well does your AI predict demand?,ml_model,ml_model,0.893,True,correct,dev
+what accuracy does the prediction model have,ml_model,ml_model,0.889,True,correct,dev
+Which variables matter most in the model?,ml_features,ml_features,0.564,True,correct,dev
+On which days does the forecast fail?,hard_to_predict,hard_to_predict,0.525,True,correct,dev
+when should I use my dryer to help the grid,save_power,save_power,0.593,True,correct,dev
+how can i reduce electricity at peak times,save_power,save_power,0.622,True,correct,dev
+How did you handle missing values?,data_cleaning,data_cleaning,0.88,True,correct,dev
+can i search for a certain day,date_help,date_help,0.482,True,correct,dev
+what algorithm does this chatbot use,about_app,about_app,0.424,True,correct,dev
+What is the capital of France?,none,rejected,0.09,False,correctly rejected,dev
+Who won the World Cup in 2022?,none,rejected,0.069,False,correctly rejected,dev
+Give me a recipe for ramen,none,rejected,0.047,False,correctly rejected,dev
+How do I learn Python quickly?,none,rejected,0.032,False,correctly rejected,dev
+What is the price of Bitcoin?,none,rejected,0.056,False,correctly rejected,dev
+Recommend a good movie,none,rejected,0.086,False,correctly rejected,dev
+Who is the prime minister of Japan?,none,rejected,0.09,False,correctly rejected,dev
+How tall is Mount Fuji?,none,rejected,0.042,False,correctly rejected,dev
+What's the best smartphone to buy?,none,rejected,0.068,False,correctly rejected,dev
+Translate hello into Spanish,none,rejected,0.054,False,correctly rejected,dev
+How many players are on a football team?,none,rejected,0.062,False,correctly rejected,dev
+What is the meaning of life?,none,rejected,0.166,False,correctly rejected,dev
+What was the single busiest hour for the Tokyo grid?,record_peak,record_peak,0.478,True,correct,final_test
+Tell me the record high for electricity demand,record_peak,record_peak,0.525,True,correct,final_test
+When did Tokyo use the smallest amount of power?,lowest_demand,lowest_demand,0.614,True,correct,final_test
+How much electricity is used on average per hour?,average_demand,average_demand,0.396,True,correct,final_test
+Is 1 GW the same as 1000 MW?,what_is_gw,what_is_gw,0.571,True,correct,final_test
+Is this dataset real or made up?,data_source,data_source,0.427,True,correct,final_test
+What is TEPCO's service area?,what_is_tepco,what_is_tepco,0.889,True,correct,final_test
+Does the weather change how much electricity people use?,temperature_effect,lowest_demand,0.324,False,wrong answer,final_test
+Per degree does heat or cold add more demand?,heat_vs_cold,heat_vs_cold,0.709,True,correct,final_test
+Which temperature is most comfortable for the grid?,lowest_temp_band,peak_temp_band,0.382,True,wrong answer,final_test
+How high does demand go when it's 35 degrees outside?,peak_temp_band,temperature_effect,0.395,True,wrong answer,final_test
+Does high humidity make demand go up?,humidity,humidity,0.442,True,correct,final_test
+What time is electricity demand highest in winter?,peak_hours,record_peak,0.54,True,wrong answer,final_test
+Compare electricity use in spring and winter,season_compare,season_compare,0.57,True,correct,final_test
+Is August the month with the most demand?,month_compare,month_compare,0.87,True,correct,final_test
+Do people use less electricity on holidays than workdays?,workday_weekend,workday_weekend,0.751,True,correct,final_test
+What's the quietest day of the week for electricity?,weekday_rank,weekday_rank,0.519,True,correct,final_test
+How does the New Year holiday change demand?,holidays,holidays,0.62,True,correct,final_test
+What is Silver Week?,what_is_golden_week,what_is_golden_week,0.885,True,correct,final_test
+How much does solar contribute at midday?,solar,solar,0.465,True,correct,final_test
+What is net demand?,net_demand,net_demand,0.879,True,correct,final_test
+Has Tokyo ever come close to a blackout?,tight_supply,data_source,0.33,True,wrong answer,final_test
+What percentage usage counts as tight supply?,usage_rate,usage_rate,0.421,True,correct,final_test
+Which city had the most hours above 35 °C?,hottest_station,hottest_station,0.592,True,correct,final_test
+Is the climate getting hotter in the data?,hotter_summers,hotter_summers,0.527,True,correct,final_test
+Is the official TEPCO forecast accurate?,tepco_forecast,tepco_forecast,0.831,True,correct,final_test
+How precise is the gradient boosting model?,ml_model,ml_model,0.69,True,correct,final_test
+Which features does the model rely on?,ml_features,ml_model,0.392,True,wrong answer,final_test
+What are the weaknesses of the prediction model?,hard_to_predict,ml_model,0.599,True,wrong answer,final_test
+What's a good time to charge my electric car?,save_power,save_power,0.341,True,correct,final_test
+What cleaning steps were applied to the data?,data_cleaning,data_cleaning,0.491,True,correct,final_test
+Can you look up a date for me?,date_help,date_help,0.494,True,correct,final_test
+Are you using ChatGPT to answer?,about_app,rejected,0.637,True,wrongly rejected,final_test
+What's the weather tomorrow in Osaka?,none,hottest_station,0.394,False,wrongly answered,final_test
+How do I cook rice?,none,rejected,0.105,False,correctly rejected,final_test
+Who painted the Mona Lisa?,none,rejected,0.06,False,correctly rejected,final_test
+What is 15 times 7?,none,rejected,0.464,False,correctly rejected,final_test
+Best places to visit in Kyoto,none,rejected,0.162,False,correctly rejected,final_test
+How do I reset my password?,none,rejected,0.055,False,correctly rejected,final_test
+Write me a poem about cats,none,rejected,0.038,False,correctly rejected,final_test
+What time does the bank open?,none,rejected,0.374,False,correctly rejected,final_test
+Which team won the 2023 baseball championship?,none,rejected,0.146,False,correctly rejected,final_test

@@ -1,0 +1,43 @@
+question,expected_id
+What was the single busiest hour for the Tokyo grid?,record_peak
+Tell me the record high for electricity demand,record_peak
+When did Tokyo use the smallest amount of power?,lowest_demand
+How much electricity is used on average per hour?,average_demand
+Is 1 GW the same as 1000 MW?,what_is_gw
+Is this dataset real or made up?,data_source
+What is TEPCO's service area?,what_is_tepco
+Does the weather change how much electricity people use?,temperature_effect
+Per degree does heat or cold add more demand?,heat_vs_cold
+Which temperature is most comfortable for the grid?,lowest_temp_band
+How high does demand go when it's 35 degrees outside?,peak_temp_band
+Does high humidity make demand go up?,humidity
+What time is electricity demand highest in winter?,peak_hours
+Compare electricity use in spring and winter,season_compare
+Is August the month with the most demand?,month_compare
+Do people use less electricity on holidays than workdays?,workday_weekend
+What's the quietest day of the week for electricity?,weekday_rank
+How does the New Year holiday change demand?,holidays
+What is Silver Week?,what_is_golden_week
+How much does solar contribute at midday?,solar
+What is net demand?,net_demand
+Has Tokyo ever come close to a blackout?,tight_supply
+What percentage usage counts as tight supply?,usage_rate
+Which city had the most hours above 35 °C?,hottest_station
+Is the climate getting hotter in the data?,hotter_summers
+Is the official TEPCO forecast accurate?,tepco_forecast
+How precise is the gradient boosting model?,ml_model
+Which features does the model rely on?,ml_features
+What are the weaknesses of the prediction model?,hard_to_predict
+What's a good time to charge my electric car?,save_power
+What cleaning steps were applied to the data?,data_cleaning
+Can you look up a date for me?,date_help
+Are you using ChatGPT to answer?,about_app
+What's the weather tomorrow in Osaka?,none
+How do I cook rice?,none
+Who painted the Mona Lisa?,none
+What is 15 times 7?,none
+Best places to visit in Kyoto,none
+How do I reset my password?,none
+Write me a poem about cats,none
+What time does the bank open?,none
+Which team won the 2023 baseball championship?,none

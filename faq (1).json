@@ -1,0 +1,413 @@
+[
+ {
+  "id": "record_peak",
+  "category": "Records",
+  "question": "What was the highest electricity demand ever recorded in the data?",
+  "variants": [
+   "What is the record peak demand?",
+   "When was demand at its maximum?",
+   "What was the all-time highest hour of electricity use?",
+   "Biggest demand ever in Tokyo?",
+   "Highest single hour of demand ever",
+   "All-time high demand on the grid"
+  ],
+  "answer": "The record was **59.3 GW** at **13:00 on 2 August 2022**, when Tokyo was 34.9 °C. All of the 10 highest-demand hours in the data happened on 2–3 August 2022, between 11:00 and 16:00, during a heatwave."
+ },
+ {
+  "id": "lowest_demand",
+  "category": "Records",
+  "question": "What was the lowest electricity demand in the data?",
+  "variants": [
+   "When was demand at its minimum?",
+   "What is the smallest hourly demand recorded?",
+   "When does Tokyo use the least electricity ever?"
+  ],
+  "answer": "The lowest hour was **18.5 GW** at **06:00 on 4 May 2025**, in the middle of **Golden Week**, with a mild 15.9 °C. All 5 of the lowest-demand hours in the data fall in Golden Week, early in the morning, when offices and factories are closed and nobody needs heating or cooling."
+ },
+ {
+  "id": "average_demand",
+  "category": "Basics",
+  "question": "What is the average electricity demand in the Tokyo area?",
+  "variants": [
+   "How much electricity does Tokyo use on average?",
+   "What is the typical hourly demand?",
+   "Mean demand of the TEPCO area?",
+   "How big is normal demand?",
+   "Normal level of demand in Tokyo"
+  ],
+  "answer": "Across all 39,744 hours (April 2022 – October 2026), demand averaged **31.7 GW** (median 30.7 GW). It ranges from 18.5 GW on quiet holiday mornings to 59.3 GW on the hottest summer afternoons, a swing of more than 3x."
+ },
+ {
+  "id": "what_is_gw",
+  "category": "Basics",
+  "question": "What does GW mean?",
+  "variants": [
+   "What is a gigawatt?",
+   "What units are used for demand?",
+   "What is 万kW?",
+   "How do I convert GW to MW or kW?",
+   "What is GWh?"
+  ],
+  "answer": "**GW (gigawatt)** is a unit of power: 1 GW = 1,000 MW = 1,000,000 kW. TEPCO publishes its data in **万kW** (10,000 kW = 10 MW), so 3,000 万kW = 30 GW. Using 1 GW for one hour is 1 **GWh** of energy, enough for roughly 100,000 Japanese homes for a day."
+ },
+ {
+  "id": "data_source",
+  "category": "About the data",
+  "question": "Where does the data come from?",
+  "variants": [
+   "What is the source of the dataset?",
+   "Which data did you use?",
+   "Who publishes this data?",
+   "Is this real data?"
+  ],
+  "answer": "It is real, official data. **Electricity demand** comes from **TEPCO Power Grid's \"でんき予報\"** (past electricity usage), and **weather** comes from the **Japan Meteorological Agency (気象庁)**, with hourly temperature, humidity and sunshine for Tokyo and 7 other Kanto stations. The two were joined into one hourly file by the open-source project kaseee/tokyo-grid-lab and then cleaned. It covers 1 April 2022 to 12 October 2026: 39,744 hours."
+ },
+ {
+  "id": "what_is_tepco",
+  "category": "Basics",
+  "question": "What is TEPCO?",
+  "variants": [
+   "Who is Tokyo Electric Power?",
+   "What area does TEPCO cover?",
+   "What is the TEPCO service area?"
+  ],
+  "answer": "**TEPCO (Tokyo Electric Power Company)** runs the power grid for the Tokyo region. Its area covers Tokyo plus Kanagawa, Saitama, Chiba, Ibaraki, Tochigi, Gunma, Yamanashi and eastern Shizuoka, about 45 million people. **TEPCO Power Grid** publishes the hourly demand data used here."
+ },
+ {
+  "id": "what_is_jma",
+  "category": "Basics",
+  "question": "What is the JMA?",
+  "variants": [
+   "What is the Japan Meteorological Agency?",
+   "What is 気象庁?",
+   "Which weather stations are used?"
+  ],
+  "answer": "The **Japan Meteorological Agency (気象庁, JMA)** is Japan's national weather service. This project uses its hourly observations from 8 Kanto stations: **Tokyo, Yokohama, Chiba, Kumagaya, Mito, Utsunomiya, Maebashi and Kofu**, plus a population-weighted Kanto average."
+ },
+ {
+  "id": "temperature_effect",
+  "category": "Weather",
+  "question": "How does temperature affect electricity demand?",
+  "variants": [
+   "Does hot weather increase demand?",
+   "What is the relationship between temperature and electricity use?",
+   "Why does demand go up when it is hot or cold?",
+   "Is demand U-shaped with temperature?",
+   "How does the weather influence electricity demand?",
+   "Relationship of temperature and demand"
+  ],
+  "answer": "The relationship is **U-shaped**. Demand is lowest at mild temperatures (about **16–20 °C**), when nobody needs heating or cooling, and it rises on both sides: **heating** in the cold and **air-conditioning** in the heat. The heat side is steeper, so the biggest peaks happen in summer. Because of the U-shape, plain correlation with temperature is weak (r = 0.20), but correlation with the *distance from about 16 °C* is strong (r = 0.64)."
+ },
+ {
+  "id": "heat_vs_cold",
+  "category": "Weather",
+  "question": "Does heat or cold add more electricity demand?",
+  "variants": [
+   "How many GW per degree?",
+   "How much does one degree of heat add?",
+   "Is air conditioning or heating bigger?",
+   "Demand increase per °C"
+  ],
+  "answer": "**Heat adds more.** On workday daytime hours, each °C **above 22 °C** adds about **1.81 GW**, while each °C **below 16 °C** adds about **1.09 GW**. A degree of heat therefore costs about **1.7x** as much as a degree of cold."
+ },
+ {
+  "id": "lowest_temp_band",
+  "category": "Weather",
+  "question": "At what temperature is electricity demand the lowest?",
+  "variants": [
+   "Which temperature gives the least demand?",
+   "What is the comfort temperature?",
+   "Best temperature for low demand?",
+   "Temperature range with the lowest demand",
+   "Lowest demand temperature band"
+  ],
+  "answer": "Average demand bottoms out at about **16–20 °C** (around **26.6–26.8 GW** on average). At that temperature Tokyo needs neither heating nor cooling."
+ },
+ {
+  "id": "peak_temp_band",
+  "category": "Weather",
+  "question": "At what temperature is electricity demand the highest?",
+  "variants": [
+   "Which temperature causes peak demand?",
+   "How hot does it get when demand peaks?",
+   "Demand at 35 degrees",
+   "Temperature band with peak demand",
+   "Peak demand temperature range",
+   "Demand needed on very hot days"
+  ],
+  "answer": "The highest demand comes in the **34–36 °C** band: an average of **50.2 GW**, about **1.9x** the mild-weather level, with a peak of **59.3 GW**. Cold weather raises demand too (a 51.8 GW peak at 0–2 °C), but less than summer heat."
+ },
+ {
+  "id": "humidity",
+  "category": "Weather",
+  "question": "Does humidity affect electricity demand?",
+  "variants": [
+   "Do humid days use more electricity?",
+   "Effect of humidity on demand",
+   "Muggy weather and air conditioning",
+   "Humidity and air conditioning demand"
+  ],
+  "answer": "Yes, on hot days. On workday afternoons at **28–34 °C**, every **+10 % humidity** adds about **2.2 GW** of demand at the same temperature, because air-conditioners work harder in humid air. This was measured with a multiple regression on temperature and humidity."
+ },
+ {
+  "id": "peak_hours",
+  "category": "Time patterns",
+  "question": "What time of day does electricity demand peak?",
+  "variants": [
+   "When is the daily peak?",
+   "Which hour has the highest demand?",
+   "Peak time in summer and winter",
+   "When is demand highest during the day?",
+   "Peak hour of the day",
+   "What hour of the day has peak demand in summer and winter?",
+   "Daily demand curve by hour",
+   "Which hour has peak demand in summer?"
+  ],
+  "answer": "It depends on the season. In **summer**, demand peaks at **13:00–14:00**, when air-conditioning works hardest. In **winter** there are two peaks, at **09:00** (morning heating) and **18:00** (evening heating and lighting). The quietest hours all year are about **02:00–04:00**."
+ },
+ {
+  "id": "season_compare",
+  "category": "Time patterns",
+  "question": "Which season uses the most electricity?",
+  "variants": [
+   "Is demand higher in summer or winter?",
+   "Compare demand by season",
+   "Which season has the lowest demand?"
+  ],
+  "answer": "On **average**, **winter (34.6 GW)** and **summer (34.4 GW)** are almost equal, while **spring (28.0 GW)** and **autumn (30.1 GW)** are lower. But the **highest peaks** come in summer: **74 %** of the top 5 % of demand hours fall in summer, and only 9 % in winter."
+ },
+ {
+  "id": "month_compare",
+  "category": "Time patterns",
+  "question": "Which month has the highest electricity demand?",
+  "variants": [
+   "Highest and lowest month",
+   "Which month uses the least electricity?",
+   "Demand by month"
+  ],
+  "answer": "**July (36.6 GW)** and **August (36.5 GW)** have the highest average demand, followed by **January and February** (about 35 GW). **May (26.4 GW)** is the lowest, about 28 % below July: mild weather plus the Golden Week holidays."
+ },
+ {
+  "id": "workday_weekend",
+  "category": "Time patterns",
+  "question": "Is electricity demand lower on weekends?",
+  "variants": [
+   "Workday versus weekend demand",
+   "How much less electricity on holidays?",
+   "Do offices change demand?",
+   "Weekday vs weekend"
+  ],
+  "answer": "Yes. **Workdays average 33.1 GW**, compared with **29.0 GW** on weekends and holidays, about **4 GW less**. The gap is largest during office hours (up to about 7 GW at 09:00)."
+ },
+ {
+  "id": "weekday_rank",
+  "category": "Time patterns",
+  "question": "Which day of the week has the most and least electricity demand?",
+  "variants": [
+   "Busiest day of the week",
+   "Is Sunday the quietest day?",
+   "Monday vs Tuesday demand"
+  ],
+  "answer": "**Tuesday to Thursday** are the busiest days (median about 32 GW). **Saturday (28.4 GW)** and **Sunday (27.3 GW)** are clearly lower, and **Sunday is the quietest day**. Monday is a little lower than mid-week because many public holidays fall on Mondays."
+ },
+ {
+  "id": "holidays",
+  "category": "Time patterns",
+  "question": "How do holidays like Golden Week and Obon affect demand?",
+  "variants": [
+   "Demand during Golden Week",
+   "What happens to electricity use in Obon?",
+   "New Year holiday demand",
+   "Which holidays have the lowest demand?",
+   "Do holidays reduce electricity demand?",
+   "Effect of Obon and New Year on demand"
+  ],
+  "answer": "Long holidays cut demand sharply because offices and factories close. The **Golden Week** holidays (Constitution Day, Greenery Day and Children's Day) have the **lowest demand of any holiday**, at about **22.4 GW** on average, and the 5 lowest hours in the whole dataset are in Golden Week. **Obon** (mid-August) and the **New Year break** also lower demand, but less, because Obon falls in the hot season."
+ },
+ {
+  "id": "what_is_golden_week",
+  "category": "Basics",
+  "question": "What is Golden Week?",
+  "variants": [
+   "What is Obon?",
+   "What is Silver Week?",
+   "What is a bridge day?",
+   "Japanese holiday periods"
+  ],
+  "answer": "**Golden Week** is a cluster of Japanese public holidays from about 29 April to 5 May. **Obon** is a summer holiday period around 13–16 August, when many companies close. **Silver Week** is a cluster of holidays in late September (in 2026: 19–23 September). A **bridge day** is a normal workday between two days off; many people take it off too, which makes it hard to predict."
+ },
+ {
+  "id": "solar",
+  "category": "Solar & supply",
+  "question": "How much electricity comes from solar power?",
+  "variants": [
+   "What is the solar share?",
+   "How much does solar cover at noon?",
+   "Solar output in Tokyo",
+   "How big is solar power?"
+  ],
+  "answer": "Solar matters a lot in the middle of the day. At **noon on spring days**, solar covers about **34 %** of demand (about **28 %** at noon averaged over the year). The **highest solar hour** rose from **15.2 GW in 2022** to **17.8 GW in 2026** (+17 %)."
+ },
+ {
+  "id": "net_demand",
+  "category": "Solar & supply",
+  "question": "How does solar change the daily demand curve?",
+  "variants": [
+   "What is net demand?",
+   "Why does the real peak move to the evening?",
+   "Duck curve in Tokyo",
+   "Demand minus solar",
+   "Why is the evening hardest for power plants?"
+  ],
+  "answer": "**Net demand** is demand minus solar output: what other power plants must supply. On spring workdays, solar lowers it from about 31 GW to **21.1 GW at noon**, but it climbs back to **31.6 GW by 18:00** after sunset. So the hardest hour for conventional plants moves from midday to the **early evening**, a pattern often called the **\"duck curve\"**."
+ },
+ {
+  "id": "tight_supply",
+  "category": "Solar & supply",
+  "question": "When was the power supply the tightest?",
+  "variants": [
+   "Highest usage rate",
+   "When did demand come closest to supply capacity?",
+   "Was there a power shortage?",
+   "使用率 highest",
+   "Was the grid close to a power shortage?",
+   "Running out of supply capacity"
+  ],
+  "answer": "The tightest hour reached **99 % usage**, with only **0.37 GW** of spare capacity, at **17:00 on 22 July 2026**. Tight hours (97 % or more) also happened on **winter mornings** (14 Dec 2025, 3 Jan 2026) and in early May, so the risk isn't only in summer."
+ },
+ {
+  "id": "usage_rate",
+  "category": "Solar & supply",
+  "question": "What is the usage rate?",
+  "variants": [
+   "What does usage rate mean?",
+   "What is 使用率?",
+   "Demand divided by supply"
+  ],
+  "answer": "The **usage rate (使用率)** is **demand ÷ available supply capacity × 100**. Above about **95 %**, supply is considered tight; TEPCO's でんき予報 shows this rate every hour so people can save power when it's high."
+ },
+ {
+  "id": "hottest_station",
+  "category": "Weather",
+  "question": "Which place in Kanto is the hottest?",
+  "variants": [
+   "Hottest weather station",
+   "Where is it hottest, Kumagaya or Tokyo?",
+   "Highest temperature recorded",
+   "How many hours above 35 degrees?"
+  ],
+  "answer": "**Inland stations are the hottest.** **Kumagaya** and **Maebashi** both reached **40.05 °C**. Kumagaya had **644 hours at 35 °C or above** in the data, against **136** for Tokyo and only **36** for coastal Chiba. Sea breezes keep the coast cooler."
+ },
+ {
+  "id": "hotter_summers",
+  "category": "Trends",
+  "question": "Are summers getting hotter?",
+  "variants": [
+   "Is there a trend in heat?",
+   "Hours above 35 degrees per year",
+   "Climate trend in the data",
+   "Is demand increasing over the years?",
+   "Number of very hot hours over the years",
+   "Is the climate warming in this data?",
+   "Year by year trend"
+  ],
+  "answer": "In this data, yes for heat: July–August hours at **35 °C or above** in Tokyo went from **11 (2022)** to **45 (2025)**, and the average summer demand rose from 36.2 to 37.6 GW. 2026 had a cooler summer. Over the whole period, though, the **yearly average demand stayed flat at about 32 GW**, and 2026 ran about 4 % lower than 2024–25."
+ },
+ {
+  "id": "tepco_forecast",
+  "category": "Forecasting",
+  "question": "How accurate is TEPCO's demand forecast?",
+  "variants": [
+   "TEPCO forecast error",
+   "Is the official forecast good?",
+   "When is the forecast least accurate?",
+   "How good is the official TEPCO forecast?"
+  ],
+  "answer": "Very accurate: on average it's off by only about **1.0–1.1 %**. It's least accurate in **hot weather** (about 1.35 % error at 30–32 °C) and in **spring** (1.11 %), when solar output and mild weather make demand harder to predict."
+ },
+ {
+  "id": "ml_model",
+  "category": "Forecasting",
+  "question": "How accurate is the machine learning model?",
+  "variants": [
+   "Can AI predict electricity demand?",
+   "What model predicts demand?",
+   "Prediction accuracy of the model",
+   "MAPE of the final model"
+  ],
+  "answer": "A **Gradient Boosting** model trained on weather and calendar features predicts hourly demand with **2.6 %** error (R² 0.975) on 2026 data it never saw. After improvement (holiday features, recent demand history and tuning), the **final model reaches 2.0 %** error (R² 0.982), and 78 % of hours are within 3 %."
+ },
+ {
+  "id": "ml_features",
+  "category": "Forecasting",
+  "question": "What features are most important for predicting demand?",
+  "variants": [
+   "What drives the prediction?",
+   "Feature importance",
+   "Which inputs matter most?"
+  ],
+  "answer": "The most important inputs are the **hour of day**, the **temperature** (current and the average over the last 24 hours), whether it's a **workday**, and, in the improved model, **demand at the same hour 2 days and 1 week earlier**. Humidity and sunshine add a little; holiday-block features help on long holidays."
+ },
+ {
+  "id": "hard_to_predict",
+  "category": "Forecasting",
+  "question": "Which days are hardest to predict?",
+  "variants": [
+   "Where does the model make mistakes?",
+   "Biggest prediction errors",
+   "Model weaknesses"
+  ],
+  "answer": "**Bridge days** (a workday between days off) are the hardest: 7.1 % error at first, 5.3 % after improvement. **Public holidays**, **long holiday blocks** such as Silver Week, and **sudden cold snaps** (like the snowy Sunday of 8 Feb 2026) are also difficult. **August/Obon** is still the hardest month."
+ },
+ {
+  "id": "save_power",
+  "category": "Tips",
+  "question": "When is the best time to use electricity to help the grid?",
+  "variants": [
+   "How can I save electricity?",
+   "When should I run my washing machine?",
+   "Tips to reduce peak demand",
+   "節電 tips",
+   "Reduce demand at peak times",
+   "Lower my electricity at the peak"
+  ],
+  "answer": "Shift flexible use away from the peak. In **summer**, avoid about **13:00–16:00**, and in **winter**, avoid about **08:00–10:00 and 17:00–19:00**. Late night and early morning (about **00:00–06:00**) have the least demand. On sunny spring and autumn days, **midday** is also a good time, because solar supplies a large share. Setting the air-conditioner 1–2 °C milder at peak times helps too."
+ },
+ {
+  "id": "data_cleaning",
+  "category": "About the data",
+  "question": "How was the data cleaned?",
+  "variants": [
+   "What preprocessing was done?",
+   "Were there missing values?",
+   "Data quality steps"
+  ],
+  "answer": "The cleaning checked for missing values (229 blank cells, mostly humidity sensor outages), duplicates (none), out-of-range values (none) and inconsistencies (8 hours where TEPCO's two demand figures disagreed were flagged). Gaps of 3 hours or less were interpolated; longer outages were left blank. Units were converted from 万kW to GW, timestamps were made timezone-aware (Asia/Tokyo), and Japanese holidays and temperature bands were added."
+ },
+ {
+  "id": "date_help",
+  "category": "About this app",
+  "question": "Can I ask about a specific date?",
+  "variants": [
+   "How do I look up a day?",
+   "Show demand for a date",
+   "Check a particular day",
+   "Search demand for a specific day",
+   "Can I enter a date?",
+   "Look up one day in the data"
+  ],
+  "answer": "Yes. Include a date between **2022-04-01** and **2026-10-12** in your question, for example *\"What was the demand on 2024-08-05?\"* or *\"How hot was it on 5 August 2024?\"*. The assistant then looks up that day's peak and lowest demand and the temperatures in the real data."
+ },
+ {
+  "id": "about_app",
+  "category": "About this app",
+  "question": "How does this assistant work?",
+  "variants": [
+   "What AI model is used?",
+   "How do you find the answer?",
+   "Is this ChatGPT?",
+   "Explain the NLP"
+  ],
+  "answer": "It's a **retrieval-based question-answering** model built with scikit-learn. Your question is cleaned (lower-cased, with synonyms such as \"power usage\" turned into \"demand\") and converted into **TF-IDF vectors**, using both words and character fragments so that small typos still match. It is then compared with every known question using **cosine similarity**. The closest answer is shown with a confidence score; if nothing is similar enough, the assistant says it doesn't know instead of guessing. Questions containing a date are answered directly from the data."
+ }
+]

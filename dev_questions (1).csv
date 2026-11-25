@@ -1,0 +1,73 @@
+question,expected_id
+What's the most electricity Tokyo has ever used in one hour?,record_peak
+when did the grid hit its all time high,record_peak
+max demand ever seen?,record_peak
+When was electricity consumption at its lowest point?,lowest_demand
+what is the minimum demand in the dataset,lowest_demand
+How much power does the Tokyo area normally need?,average_demand
+typical electricity demand in tokyo,average_demand
+How many MW are in one GW?,what_is_gw
+what does gigawatt mean,what_is_gw
+where did you get this data from,data_source
+Which organisations provide the data?,data_source
+Tell me about Tokyo Electric Power Company,what_is_tepco
+which prefectures does tepco serve,what_is_tepco
+What is the Japan weather agency?,what_is_jma
+which weather stations did you use,what_is_jma
+Why does electricity use rise in hot and cold weather?,temperature_effect
+how is temperature related to power demand,temperature_effect
+How many gigawatts does each extra degree add?,heat_vs_cold
+does cooling cost more than heating,heat_vs_cold
+What temperature has the least electricity use?,lowest_temp_band
+at which temperature is demand lowest,lowest_temp_band
+How much power is needed at 35 °C?,peak_temp_band
+which temperature range has the highest demand,peak_temp_band
+Do muggy days increase electricity use?,humidity
+what is the impact of humidity,humidity
+At what hour is demand highest in summer?,peak_hours
+when during the day is electricity use at its peak,peak_hours
+Is winter or summer demand bigger?,season_compare
+which season has the highest electricity use,season_compare
+Which month has the lowest electricity use?,month_compare
+what month uses the most power,month_compare
+How much lower is demand on Saturdays and Sundays?,workday_weekend
+weekend vs workday electricity,workday_weekend
+Which day of the week is the busiest for electricity?,weekday_rank
+is sunday the lowest day,weekday_rank
+What happens to demand during Golden Week holidays?,holidays
+does obon reduce electricity usage,holidays
+What does Obon mean?,what_is_golden_week
+explain bridge days,what_is_golden_week
+What share of demand is covered by solar panels?,solar
+how much solar power is there,solar
+Why does the evening become the hardest time for power plants?,net_demand
+what is the duck curve,net_demand
+When was the grid closest to running out of power?,tight_supply
+highest usage rate ever,tight_supply
+How is the usage rate calculated?,usage_rate
+which station is hottest,hottest_station
+Where in Kanto does it get above 40 degrees?,hottest_station
+Are there more very hot hours now than before?,hotter_summers
+is electricity demand growing every year,hotter_summers
+How good is TEPCO at forecasting demand?,tepco_forecast
+How well does your AI predict demand?,ml_model
+what accuracy does the prediction model have,ml_model
+Which variables matter most in the model?,ml_features
+On which days does the forecast fail?,hard_to_predict
+when should I use my dryer to help the grid,save_power
+how can i reduce electricity at peak times,save_power
+How did you handle missing values?,data_cleaning
+can i search for a certain day,date_help
+what algorithm does this chatbot use,about_app
+What is the capital of France?,none
+Who won the World Cup in 2022?,none
+Give me a recipe for ramen,none
+How do I learn Python quickly?,none
+What is the price of Bitcoin?,none
+Recommend a good movie,none
+Who is the prime minister of Japan?,none
+How tall is Mount Fuji?,none
+What's the best smartphone to buy?,none
+Translate hello into Spanish,none
+How many players are on a football team?,none
+What is the meaning of life?,none

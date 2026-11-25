@@ -1,0 +1,35 @@
+{
+  "threshold": 0.3,
+  "knowledge_base_entries": 33,
+  "knowledge_base_phrasings": 180,
+  "development_set": {
+    "questions": 72,
+    "electricity_questions": 60,
+    "off_topic_questions": 12,
+    "top1_accuracy_pct": 95.0,
+    "top3_accuracy_pct": 98.3,
+    "off_topic_rejection_pct": 100.0,
+    "overall_accuracy_pct": 95.8
+  },
+  "final_test_set": {
+    "questions": 42,
+    "electricity_questions": 33,
+    "off_topic_questions": 9,
+    "top1_accuracy_pct": 75.8,
+    "top3_accuracy_pct": 97.0,
+    "off_topic_rejection_pct": 88.9,
+    "overall_accuracy_pct": 78.6
+  },
+  "earlier_versions_on_final_test": {
+    "v1: TF-IDF words + characters": {
+      "top1": 81.8,
+      "reject": 55.6,
+      "overall": 76.2
+    },
+    "v2: + synonyms, answer text, tuned on dev": {
+      "top1": 75.8,
+      "reject": 66.7,
+      "overall": 73.8
+    }
+  }
+}
